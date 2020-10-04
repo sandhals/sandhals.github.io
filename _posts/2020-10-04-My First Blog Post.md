@@ -10,4 +10,10 @@ Some **more** text.
 
 And a picture, maybe?
 
-![a head]({{site.baseurl}}/_posts/a%20head.png)
+![a head.png]({{site.baseurl}}/_posts/a head.png)
+
+A quote about love?
+
+> We loved with a love that was more than love
+
+
