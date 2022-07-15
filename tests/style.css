@@ -1,0 +1,36 @@
+:root{
+    --gradient: linear-gradient(
+      45deg,
+      #121116,
+      #231c2b,
+      #1f213a,
+      #1e2b26,
+      #2e1a26
+    );
+  }
+
+body{
+  padding:5vh 0 5vh 0;
+}
+
+.box{
+  display:absolute;
+  inset: 0;
+  width:80vh;
+  height:69vh;
+  border:solid 1px;
+  padding:8vh 7vh 8vh 7vh;
+  margin:auto;
+  overflow:scroll;
+}
+
+.text{
+  background-image: var(--gradient);
+  background-clip:text;
+  
+}
+
+
+::-webkit-scrollbar{
+  display:none;
+}
