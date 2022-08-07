@@ -1,0 +1,486 @@
+::selection{
+    background-color:black;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background:#fff;
+    overflow:hidden;
+  }
+  
+  .container{
+    margin:0;
+    padding:0;
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    position:relative;
+    width:50rem;
+    
+  }
+  
+  
+  .circle{
+    position:relative;
+    border:solid black 1px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .outermost{
+    /*height:70vh;
+    width:70vh;*/
+    height:33em;
+    width:33em;
+    overflow:hidden;
+    transform:rotate(-120deg);
+    transition:3s;
+  
+  }
+  
+  .outermost > li> div{
+      -webkit-filter: grayscale(20%);
+  }
+  
+  .house{
+    display:block;
+    margin-left:-8px;
+    padding-right:3px;
+    transform:scaleX(60%);
+    text-decoration:none;
+    opacity:.4;
+    color:black;
+    z-index:1;
+    min-width:1em;
+  }
+  
+  .housedescription{
+    text-align:left;
+    display:none;
+    font-family:monospace;
+    font-size:8pt;
+    position:absolute;
+    z-index:3;
+    left:0;
+    top:53.05%;
+    /*top:318px;37em*/
+    padding:0 3em 0 0; /*2.5em*/
+    border-bottom:solid grey 0.5px;
+    height:10.9em;
+    width:24.5em;
+    overflow-y:scroll;
+    scrollbar-width:none;
+  }
+  
+  .housedescription::-webkit-scrollbar {
+    display: none;
+  }.housedescription {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .house:hover{
+    opacity:1;
+  }
+  
+  .first:hover ~ .outermost{
+    transform:rotate(-120deg);
+    transition:2s;
+  }.first:focus ~ #i{
+    display:block;
+  }.first:focus{
+    opacity:1;
+  }.first:focus ~ .outermost{
+    transform:rotate(-120deg);
+    transition:2s;
+  }
+  
+  .second:hover ~ .outermost{
+    transform:rotate(-90deg);
+    transition:2s;
+  }.second:focus ~ #ii{
+    display:block;
+  }.second:focus{
+    opacity:1;
+  }.second:focus ~ .outermost{
+    transform:rotate(-90deg);
+    transition:2s;
+  }
+  
+  .third:hover ~ .outermost{
+    transform:rotate(-60deg);
+    transition:2s;
+  }.third:focus ~ #iii{
+    display:block;
+  }.third:focus{
+    opacity:1;
+  }.third:focus ~ .outermost{
+    transform:rotate(-60deg);
+    transition:2s;
+  }
+  
+  
+  .fourth:hover ~ .outermost{
+    transform:rotate(-30deg);
+    transition:2s;
+  }.fourth:focus ~ #iv{
+    display:block;
+  }.fourth:focus{
+    opacity:1;
+  }.fourth:focus ~ .outermost{
+    transform:rotate(-30deg);
+    transition:2s;
+  }
+  
+  .fifth:hover ~ .outermost{
+    transform:rotate(0deg);
+    transition:2s;
+  }.fifth:focus ~ #v{
+    display:block;
+  }.fifth:focus{
+    opacity:1;
+  }.fifth:focus ~ .outermost{
+    transform:rotate(0deg);
+    transition:2s;
+  }
+  
+  
+  .sixth:hover ~ .outermost{
+    transform:rotate(30deg);
+    transition:2s;
+  }.sixth:focus ~ #vi{
+    display:block;
+  }.sixth:focus{
+    opacity:1;
+  }.sixth:focus ~ .outermost{
+    transform:rotate(30deg);
+    transition:2s;
+  }
+  
+  
+  .seventh:hover ~ .outermost{
+    transform:rotate(60deg);
+    transition:2s;
+  }.seventh:focus ~ #vii{
+    display:block;
+  }.seventh:focus{
+    opacity:1;
+  }.seventh:focus ~ .outermost{
+    transform:rotate(60deg);
+    transition:2s;
+  }
+  
+  .eighth:hover ~ .outermost{
+    transform:rotate(90deg);
+    transition:2s;
+  }.eighth:focus ~ #viii{
+    display:block;
+  }.eighth:focus{
+    opacity:1;
+  }.eighth:focus ~ .outermost{
+    transform:rotate(90deg);
+    transition:2s;
+  }
+  
+  .ninth:hover ~ .outermost{
+    transform:rotate(120deg);
+    transition:2s;
+  }.ninth:focus ~ #ix{
+    display:block;
+  }.ninth:focus{
+    opacity:1;
+  }.ninth:focus ~ .outermost{
+    transform:rotate(120deg);
+    transition:2s;
+  }
+  
+  .tenth:hover ~ .outermost{
+    transform:rotate(150deg);
+    transition:2s;
+  }.tenth:focus ~ #x{
+    display:block;
+  }.tenth:focus{
+    opacity:1;
+  }.tenth:focus ~ .outermost{
+    transform:rotate(150deg);
+    transition:2s;
+  }
+  
+  .eleventh:hover ~ .outermost{
+    transform:rotate(180deg);
+    transition:2s;
+  }.eleventh:focus ~ #xi{
+    display:block;
+  }.eleventh:focus{
+    opacity:1;
+  }.eleventh:focus ~ .outermost{
+    transform:rotate(180deg);
+    transition:2s;
+  }
+  
+  .twelfth:hover ~ .outermost{
+    transform:rotate(210deg);
+    transition:2s;
+  }.twelfth:focus ~ #xii{
+    display:block;
+  }.twelfth:focus{
+    opacity:1;
+  }.twelfth:focus ~ .outermost{
+    transform:rotate(210deg);
+    transition:2s;
+  }
+  
+  
+  
+  .natalchart{
+    /*height:64vh;
+    width:64vh;*/
+    height:30em;
+    width:30em;
+    overflow:hidden;
+  }
+  
+  .signs{
+    /*max-height:48vh;*/
+    /*max-width:48vh;*/
+    height:20em;
+    width:20em;
+    border:0;
+  }
+  
+  .houses{
+    border:1px;
+    height:15em;
+    width:15em;
+    background:white;
+    overflow:hidden;
+    
+  }
+  
+  .planet{
+    border:solid black 1px;
+    border-radius:50%;
+    z-index:100;
+    height:3px;
+    width:3px;
+  }
+  
+  .ascendant{
+    height:102%;
+    width:1px;
+    border-left:solid slategray 2px;
+  }
+  
+  li {
+    justify-content:space-between;
+    font-family:monospace;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+    border-bottom:solid black 1px;
+    text-align:center;
+    
+  }
+  .text {
+    position: absolute;
+    left: -100%;
+    width: 205%;
+    height: 205%;
+    text-align:center;
+    transform: skewY(60deg) rotate(13deg);
+    padding-top:3px;
+    
+  }
+  
+  li:first-child {
+    transform: rotate(0deg) skewY(-60deg);
+  }
+  li:nth-child(2) {
+    transform: rotate(-30deg) skewY(-60deg);
+  }
+  li:nth-child(3) {
+    transform: rotate(-60deg) skewY(-60deg);
+  }
+  li:nth-child(4) {
+    transform: rotate(-90deg) skewY(-60deg);
+  }
+  li:nth-child(5) {
+    transform: rotate(-120deg) skewY(-60deg);
+  }
+  li:nth-child(6) {
+    transform: rotate(-150deg) skewY(-60deg);
+  }
+  li:nth-child(7) {
+    transform: rotate(-180deg) skewY(-60deg);
+  }
+  li:nth-child(8) {
+    transform: rotate(-210deg) skewY(-60deg);
+  }
+  li:nth-child(9) {
+    transform: rotate(-240deg) skewY(-60deg);
+  }
+  li:nth-child(10) {
+    transform: rotate(-270deg) skewY(-60deg);
+  }
+  li:nth-child(11) {
+    transform: rotate(-300deg) skewY(-60deg);
+  }
+  li:nth-child(12) {
+    transform: rotate(-330deg) skewY(-60deg);
+  }
+  
+  
+  .signs{
+    transform: rotate(-345deg);
+  }
+  
+  .signs > li{
+  text-align:right!important;
+  border:none;
+  
+  }
+  
+  /*sun*/
+  .signs > li:first-child {
+    transform: rotate(27deg) skewY(-60deg);
+  }
+  /*moon*/
+  .signs > li:nth-child(2) {
+    transform: rotate(-179deg) skewY(-60deg);
+  }
+  
+  /*mercury*/
+  .signs > li:nth-child(3) {
+    transform: rotate(20deg) skewY(-60deg);
+  }
+  /*venus*/
+  .signs > li:nth-child(4) {
+    transform: rotate(-16deg) skewY(-60deg);
+  }
+  /*mars*/
+  .signs > li:nth-child(5) {
+    transform: rotate(-274deg) skewY(-60deg);
+  }
+  /*jupiter*/
+  .signs > li:nth-child(6) {
+    transform: rotate(-38deg) skewY(-60deg);
+  }
+  /*saturn*/
+  .signs > li:nth-child(7) {
+    transform: rotate(-159deg) skewY(-60deg);
+  }
+  /*uranus*/
+  .signs > li:nth-child(8) {
+    transform: rotate(-112deg) skewY(-60deg);
+  }
+  /*neptune*/
+  .signs > li:nth-child(9) {
+    transform: rotate(-109deg) skewY(-60deg);
+  }
+  /*pluto*/
+  .signs > li:nth-child(10) {
+    transform: rotate(-55deg) skewY(-60deg);
+  }
+  
+  
+  
+  
+  .mer:hover ~ .mersat{
+    -webkit-filter:grayscale(0)!important;
+  }
+  
+  
+  
+  
+  
+  
+  .asp{
+    position:absolute;
+    height:102%;
+    width:0;
+    border-right:solid 1px;
+    -webkit-filter:grayscale(50%);
+  }
+  
+  .marjup{
+    transform:rotate(130.5deg) translate(-3.7em);
+    border-color:blue;
+  }
+  
+  .jupsat{
+     transform:rotate(189deg) translate(3.66em);
+      border-color:blue;
+  }
+  
+  .satmars{
+     transform:rotate(69.5deg) translate(3.9em);
+      border-color:blue;
+  }
+  
+  .mersat{
+     transform:rotate(217.5deg) translate(0.05em);
+      border-color:red;
+  }
+  
+  .sunsat{
+     transform:rotate(220.5deg) translate(-0.35em);
+      border-color:red;
+  }
+  
+  .moonplu{
+     transform:rotate(167deg) translate(3.7em);
+      border-color:blue;
+  }
+  
+  .moonmars{
+     transform:rotate(59deg) translate(5.04em);
+      border-color:orange;
+  }
+  
+  .vennep{
+    transform:rotate(40deg) translate(-5em);
+      border-color:orange;
+  }
+  
+  .venura{
+    transform:rotate(42deg) translate(-5.2em);
+      border-color:orange;
+  }
+  
+  .merjup{
+      transform:rotate(97.6deg) translate(-6.6em);
+      border-color:green;
+  }
+  
+  .sunmar{
+      transform:rotate(-18deg) translate(6.55em);
+      border-color:green;
+  }
+  
+  .plunep{
+      transform:rotate(21deg) translate(-6.8em);
+      border-color:green;
+  }
+  
+  .pluura{
+      transform:rotate(19deg) translate(-6.7em);
+      border-color:green;
+  }
+  
+  .sunplu{
+      transform:rotate(90deg) translate(-5.5em);
+      border-color:red;
+  }
