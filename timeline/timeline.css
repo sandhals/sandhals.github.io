@@ -5,11 +5,17 @@ body{
     font-family:sans-serif;
   }
   
+::selection{
+  background:black;
+  color:white;
+}
+
   .header{
     height:100vh;
     margin:0;
     display:grid;
     grid-template-columns:1fr 1fr;
+    background:rgb(116, 126, 102);
   }
   
 .halftwo{

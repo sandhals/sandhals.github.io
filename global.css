@@ -1,6 +1,7 @@
 :root {
     --background:#faf8f8;
     --highlight:salmon;
+    --line:grey;
     --risshun:rgb(250, 130, 117); /*plum blossoms*/
     --usui:rgb(136, 154, 255); /*spring showers*/
     --keichitsu:rgb(179, 137, 110); /*insect exoskeleton*/
@@ -62,7 +63,7 @@
 
 body{
     background-size:70px 70px;
-    background-image:linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-image:linear-gradient(to right, var(--line) 1px, transparent 1px), linear-gradient(to bottom, var(--line) 1px, transparent 1px);
     margin:0px;
     max-height:100vh;
     min-width:1500px;
@@ -116,7 +117,7 @@ canvas {
     position:relative;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width: 419px;
     height: 349px;
@@ -132,7 +133,7 @@ canvas {
     position:relative;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width: 419px;
     height: 279px;
@@ -567,7 +568,7 @@ img{
     top:0;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width:calc(70px * 3 - 1px);
     height:calc(70px * 1 - 1px);
@@ -582,7 +583,7 @@ img{
     top:0;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width:calc(70px * 3 - 1px);
     height:calc(70px * 3 - 1px);
@@ -595,7 +596,7 @@ img{
     top:0;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width:calc(70px * 3 - 1px);
     height:calc(70px * 5 - 1px);
@@ -608,7 +609,7 @@ img{
     top:0;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width:calc(70px * 3 - 1px);
     height:calc(70px * 4 - 1px);
@@ -623,7 +624,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 4 - 1px);
    height:calc(70px * 4 - 1px);
@@ -636,7 +637,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 4 - 1px);
    height:calc(70px * 3 - 1px);
@@ -650,7 +651,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 4 - 1px);
    height:calc(70px * 2 - 1px);
@@ -664,7 +665,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 4 - 1px);
    height:calc(70px * 6 - 1px);
@@ -677,7 +678,7 @@ img{
     top:0;
     border: 1px;
     border-style:solid;
-    border-color:grey;
+    border-color:var(--line);
     background:var(--background);
     width:349px;
     height:209px;
@@ -690,7 +691,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 5 - 1px);
    height:calc(70px * 4 - 1px);
@@ -704,7 +705,7 @@ img{
    top:0;
    border: 1px;
    border-style:solid;
-   border-color:grey;
+   border-color:var(--line);
    background:var(--background);
    width:calc(70px * 6 - 1px);
    height:calc(70px * 4 - 1px);
@@ -813,7 +814,7 @@ iframe{
   }
 
   tr, td, th{
-      border:1px solid grey;
+      border:1px solid var(--line);
       padding:0;
       margin:0;
       background-color:var(--background);
@@ -847,7 +848,7 @@ iframe{
     position:absolute;
     top:0;
     background:var(--background);
-    border:grey solid 1px;
+    border:var(--line) solid 1px;
     width:69px;
     height:69px;
     transition: width 3s ease-in-out;

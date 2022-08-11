@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:monospace;
+}
+
+.site{
+    display:grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.sketchbook{
+    background:white;
+    height:calc(100vh - 0px);
+    position:relative;
+}
+
+.notes{
+    padding:50px 10px;
+}
+
+iframe{
+    width:100vw;
+    height:100vh;
+    border:none;
+    overflow:hidden;
+    position:absolute;
+}
+
+img{
+    position:absolute;
+    right:0;
+    width:90%;
+}
+
+.menu{
+    position:absolute;
+    right:5px;
+    z-index:2;
+    top:0;
+    padding-top:10px;
+    height:30px;
+    width:27%;
+    background:white;
+    border-bottom:solid black 1px;
+    margin-bottom:10px;
+}
+

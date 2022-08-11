@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <form style="display:inline;" action="#">
+            <select name="pages" onchange="document.getElementById('sketches').src = this.options[this.selectedIndex].value">
+                <option value="" disabled selected>page</option>
+            <option value="page1.html">1</option>
+            <option value="page2.html">2</option>
+        </select>
+        </form>    
+    </div>
+    <iframe id="sketches" name="sketches" src="http://yahoo.com/">
+    </iframe>
+       
+</div>
+
+<script>
+const url = document.getElementById("sketches").contentWindow.location.href;</script>
+</body>
