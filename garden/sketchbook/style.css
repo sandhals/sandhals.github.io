@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     font-family:monospace;
+    font-size:12pt;
 }
 
 .site{
@@ -9,11 +10,14 @@
     grid-template-columns: 5fr 2fr;
 }
 
+
 .sketchbook{
     background:white;
     height:calc(100vh - 0px);
     position:relative;
 }
+
+
 
 .notes{
     padding:50px 20px;
@@ -49,3 +53,27 @@ img{
     margin-bottom:10px;
 }
 
+@media (max-aspect-ratio:5/7){
+    .site{
+        grid-template-columns:1fr;
+        grid-template-rows: 6fr 2fr;
+        height:100vh;
+    }
+    .sketchbook{
+        height:auto;
+        width:auto;
+        overflow:hidden;
+    }
+    img{
+        left:0;
+        right:0;
+        bottom:0;
+        width:100vw;
+        height:auto;
+    }
+    .menu{
+        top:75%;
+        left:20px;
+        width:calc(100% - 70px);
+    }
+}
