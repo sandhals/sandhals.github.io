@@ -5,6 +5,11 @@
     font-size:12pt;
 }
 
+body{
+    height:100vh;
+    overflow:hidden;
+}
+
 .site{
     display:grid;
     grid-template-columns: 5fr 2fr;
@@ -57,7 +62,7 @@ img{
     .site{
         grid-template-columns:1fr;
         grid-template-rows: 6fr 2fr;
-        height:100vh;
+        height:100%;
     }
     .sketchbook{
         height:auto;
