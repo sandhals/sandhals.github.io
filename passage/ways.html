@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25525983-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-25525983-1');
+</script>
+
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+<style>
+body{
+    background:black;
+    vertical-align:center;
+}
+
+#canvas {
+    position: absolute;    
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity:50%;
+    z-index:9;
+    pointer-events:none;
+}
+
+.ozu{
+    content:url("https://i.pinimg.com/originals/2b/c6/fe/2bc6fec24ae378be71d76f3279e9ad51.gif");
+    margin:auto;
+    width:700px;
+    height:532px;
+    padding:100;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */	    
+}
+
+.text{
+     margin:auto;
+      padding:50px; 
+    width:600px;
+    height:440px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    text-align:justify;	
+    opacity:85%;   
+    font-family:'Courier New';
+    font-size:13pt; 
+    line-height:1.25;
+    text-shadow: 1px 2px 4px black; 
+}
+
+.back{
+    font-family:'Courier New';
+    color:white;
+    opacity:40%;
+    position:fixed;
+    top:10px;
+    left:10px;
+    text-decoration:none;
+    text-shadow: 1px 2px 4px black;
+    font-size:13pt;
+
+}
+
+.back:hover{
+    opacity:100%;
+    transition:all 1.5s;
+}
+
+.secret{
+    opacity:0;
+}
+
+.mystery:hover ~ .secret{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+    
+    <canvas class id="canvas"></canvas>
+    <a class="back" href="/..">back</a>
+<div class="ozu"></div>
+<div class="text">
+
+So, ummm... It appears that you have found this little page. I have no purpose for it at all yet. I was just sort of missing the good ole days when websites had little secrets hidden throughout them. What ever happened to easter eggs? I want a web with a bit of <span class="mystery"><i>mystery</i></span> in it again. So I thought I would pay homage to that and hide a little secret page of my own on my site. Just the idea of making more is exciting to me... Maybe if you check back at another time, there will be something more worth while here, but for now, enjoy the light dancing on walls. <span class="secret">And maybe there will be other hints leading you to more mysteries here someday too...! If you have made it this far though, you should send me your favourite nature emoji so I can congratulate you. My favourite is 🌿!</span>
+
+
+
+</div>
+</div>
+ <script src="../script.js"></script>   
+</body>
+</html>
