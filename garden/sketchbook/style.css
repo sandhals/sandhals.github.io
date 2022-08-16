@@ -5,8 +5,9 @@
     font-size:12pt;
 }
 
+html,
 body{
-    height:100vh;
+    height:100%;
     overflow:hidden;
 }
 
@@ -42,7 +43,7 @@ iframe{
 img{
     position:absolute;
     right:0;
-    height:90%;
+    height:100%;
     filter:grayscale(0.9);
 }
 
