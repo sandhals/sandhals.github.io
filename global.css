@@ -1,6 +1,6 @@
 :root {
     --background:#faf8f8;
-    --highlight:salmon;
+    --highlight:grey;
     --line:grey;
     --risshun:rgb(250, 130, 117); /*plum blossoms*/
     --usui:rgb(136, 154, 255); /*spring showers*/
@@ -26,7 +26,6 @@
     --touji:rgb(248, 219, 52); /*ripening yuzu*/
     --shoukan:rgb(44, 97, 241); /*the face of a pheasant*/
     --daikan:rgb(149, 115, 182); /*ornamental cabbage*/
-    
   }
 
 @font-face {
@@ -559,6 +558,15 @@ img{
 .popup{
     margin-top:calc(70px * 1);
     margin-left:calc(70px * 8);
+}@media (max-width:800px){
+    .popup{
+        margin-top: calc(70px * 7);
+        margin-left:calc(70px * 3)
+    }
+    html, body{
+        width:600px!important;
+        overflow:hidden;
+    }
 }
 
 .b13{
