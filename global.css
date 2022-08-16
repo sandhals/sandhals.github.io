@@ -564,7 +564,7 @@ img{
         margin-left:calc(70px * 3)
     }
     html, body{
-        width:600px!important;
+        width:800px!important;
         overflow:hidden;
     }
 }
