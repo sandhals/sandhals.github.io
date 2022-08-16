@@ -19,6 +19,7 @@ body{
 * {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  font-family:monospace;
 }
 
 .site{
@@ -410,4 +411,12 @@ iframe{
     height:20px;
   }#guro:hover{
     opacity:1
+  }
+
+
+  @media only screen and (orientation:portrait){
+    body {
+      height: 100vw;
+      transform: rotate(90deg);
+    }
   }
