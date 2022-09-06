@@ -43,6 +43,7 @@ if(mm==2 && (dd>=4 && dd<=17)){
     document.getElementById("s-korean").innerHTML = 'ipchun';
     document.getElementById("s-meaning").innerHTML = 'start of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
+    document.getElementById("s-next").innerHTML = 'february 18';
 }
 
 if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
@@ -52,6 +53,7 @@ if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
     document.getElementById("s-korean").innerHTML = 'usu';
     document.getElementById("s-meaning").innerHTML = 'rain water';
     document.getElementById("s-motif").innerHTML = 'spring showers';
+    document.getElementById("s-next").innerHTML = 'march 6';
 }
 
 
@@ -62,6 +64,7 @@ if(mm==3 && (dd>=6 && dd<=20)){
     document.getElementById("s-korean").innerHTML = 'ipchun';
     document.getElementById("s-meaning").innerHTML = 'beginning of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
+    document.getElementById("s-next").innerHTML = 'march 21';
 }
 
 if(mm==3 && (dd>=21) || mm==4 && (dd<=3)){
@@ -71,6 +74,7 @@ if(mm==3 && (dd>=21) || mm==4 && (dd<=3)){
     document.getElementById("s-korean").innerHTML = 'usu';
     document.getElementById("s-meaning").innerHTML = 'rain water';
     document.getElementById("s-motif").innerHTML = 'spring showers';
+    document.getElementById("s-next").innerHTML = 'april 4';
 }
 
 if(mm==4 && (dd>=4 && dd<=20)){
@@ -89,6 +93,7 @@ if(mm==4 && (dd>=21) || mm==5 && (dd<=5)){
     document.getElementById("s-korean").innerHTML = 'usu';
     document.getElementById("s-meaning").innerHTML = 'rain water';
     document.getElementById("s-motif").innerHTML = 'spring showers';
+    document.getElementById("s-next").innerHTML = 'may 5';
 }
 
 if(mm==5 && (dd>=6 && dd<=20)){
@@ -98,6 +103,7 @@ if(mm==5 && (dd>=6 && dd<=20)){
     document.getElementById("s-korean").innerHTML = 'ipchun';
     document.getElementById("s-meaning").innerHTML = 'beginning of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
+    document.getElementById("s-next").innerHTML = 'may 21';
 }
 
 if(mm==5 && (dd>=21) || mm==6 && (dd<=5)){
@@ -107,6 +113,7 @@ if(mm==5 && (dd>=21) || mm==6 && (dd<=5)){
     document.getElementById("s-korean").innerHTML = 'soman';
     document.getElementById("s-meaning").innerHTML = 'grain buds';
     document.getElementById("s-motif").innerHTML = 'sprouting rice';
+    document.getElementById("s-next").innerHTML = 'june 6';
 }
 
 if(mm==6 && (dd>=6 && dd<=20)){
@@ -116,6 +123,7 @@ if(mm==6 && (dd>=6 && dd<=20)){
     document.getElementById("s-korean").innerHTML = 'mangjong';
     document.getElementById("s-meaning").innerHTML = 'grain in ear';
     document.getElementById("s-motif").innerHTML = 'drying rice husks';
+    document.getElementById("s-next").innerHTML = 'june 21';
 
     document.getElementById("before").innerHTML = '小満';
     document.getElementById("before").style.background = 'var(--shouman)';
@@ -132,6 +140,7 @@ if(mm==6 && (dd>=21) || mm==7 && (dd<=6)){
     document.getElementById("s-korean").innerHTML = 'haji';
     document.getElementById("s-meaning").innerHTML = 'summer solstice';
     document.getElementById("s-motif").innerHTML = 'summer foliage';
+    document.getElementById("s-next").innerHTML = 'july 7';
 
     document.getElementById("before").innerHTML = '芒種';
     document.getElementById("before").style.background = 'var(--boushu)';
@@ -149,6 +158,7 @@ if(mm==7 && (dd>=7 && dd<=22)){
     document.getElementById("s-korean").innerHTML = 'soseo';
     document.getElementById("s-meaning").innerHTML = 'minor heat';
     document.getElementById("s-motif").innerHTML = 'a swelling sun';
+    document.getElementById("s-next").innerHTML = 'july 23';
 
     document.getElementById("before").innerHTML = '夏至';
     document.getElementById("before").style.background = 'var(--geshi)';
@@ -165,6 +175,7 @@ if(mm==7 && (dd>=23) || mm==8 && (dd<=7)){
     document.getElementById("s-korean").innerHTML = 'daeseo';
     document.getElementById("s-meaning").innerHTML = 'great heat';
     document.getElementById("s-motif").innerHTML = 'burning red sun';
+    document.getElementById("s-next").innerHTML = 'august 8';
 
     document.getElementById("before").innerHTML = '小暑';
     document.getElementById("before").style.background = 'var(--shousho)';
@@ -181,6 +192,7 @@ if(mm==8 && (dd>=8 && dd<=22)){
     document.getElementById("s-korean").innerHTML = 'ipchu';
     document.getElementById("s-meaning").innerHTML = 'start of autumn';
     document.getElementById("s-motif").innerHTML = 'dulling foliage';
+    document.getElementById("s-next").innerHTML = 'august 23';
 
     document.getElementById("before").innerHTML = '大暑';
     document.getElementById("before").style.background = 'var(--taisho)';
@@ -197,6 +209,7 @@ if(mm==8 && (dd>=23) || mm==9 && (dd<=7)){
     document.getElementById("s-korean").innerHTML = 'cheoseo';
     document.getElementById("s-meaning").innerHTML = 'fading heat';
     document.getElementById("s-motif").innerHTML = 'a tired sun';
+    document.getElementById("s-next").innerHTML = 'september 8';
 
     document.getElementById("before").innerHTML = '立秋';
     document.getElementById("before").style.background = 'var(--risshuu)';
@@ -213,6 +226,7 @@ if(mm==9 && (dd>=8 && dd<=22)){
     document.getElementById("s-korean").innerHTML = 'baengno';
     document.getElementById("s-meaning").innerHTML = 'white dew';
     document.getElementById("s-motif").innerHTML = 'the harvest moon';
+    document.getElementById("s-next").innerHTML = 'september 23';
 }
 
 if(mm==9 && (dd>=23) || mm==10 && (dd<=7)){
@@ -222,6 +236,7 @@ if(mm==9 && (dd>=23) || mm==10 && (dd<=7)){
     document.getElementById("s-korean").innerHTML = 'chubun';
     document.getElementById("s-meaning").innerHTML = 'autumn equinox';
     document.getElementById("s-motif").innerHTML = 'the leaves turn';
+    document.getElementById("s-next").innerHTML = 'october 8';
 }
 
 if(mm==10 && (dd>=8 && dd<=22)){
@@ -231,6 +246,7 @@ if(mm==10 && (dd>=8 && dd<=22)){
     document.getElementById("s-korean").innerHTML = 'hallo';
     document.getElementById("s-meaning").innerHTML = 'cold dew';
     document.getElementById("s-motif").innerHTML = 'dew on leaves';
+    document.getElementById("s-next").innerHTML = 'october 22';
 }
 
 if(mm==10 && (dd>=22) || mm==11 && (dd<=6)){
@@ -240,6 +256,7 @@ if(mm==10 && (dd>=22) || mm==11 && (dd<=6)){
     document.getElementById("s-korean").innerHTML = 'sanggang';
     document.getElementById("s-meaning").innerHTML = 'frost descends';
     document.getElementById("s-motif").innerHTML = 'ripe persimmons';
+    document.getElementById("s-next").innerHTML = 'november 11';
 }
 
 if(mm==11 && (dd>=7 && dd<=21)){
@@ -249,6 +266,7 @@ if(mm==11 && (dd>=7 && dd<=21)){
     document.getElementById("s-korean").innerHTML = 'ipdong';
     document.getElementById("s-meaning").innerHTML = 'start of winter';
     document.getElementById("s-motif").innerHTML = 'camelias bloom';
+    document.getElementById("s-next").innerHTML = 'november 22';
 }
 
 if(mm==11 && (dd>=22) || mm==12 && (dd<=6)){
@@ -258,6 +276,7 @@ if(mm==11 && (dd>=22) || mm==12 && (dd<=6)){
     document.getElementById("s-korean").innerHTML = 'soseol';
     document.getElementById("s-meaning").innerHTML = 'light snow';
     document.getElementById("s-motif").innerHTML = 'ripening oranges';
+    document.getElementById("s-next").innerHTML = 'december 6';
 }
 
 if(mm==12 && (dd>=6 && dd<=21)){
@@ -267,6 +286,7 @@ if(mm==12 && (dd>=6 && dd<=21)){
     document.getElementById("s-korean").innerHTML = 'daeseol';
     document.getElementById("s-meaning").innerHTML = 'heavy snow';
     document.getElementById("s-motif").innerHTML = 'snow falls';
+    document.getElementById("s-next").innerHTML = 'december 22';
 }
 
 if(mm==12 && (dd>=22) || mm==1 && (dd<=5)){
@@ -276,6 +296,7 @@ if(mm==12 && (dd>=22) || mm==1 && (dd<=5)){
     document.getElementById("s-korean").innerHTML = 'dongji';
     document.getElementById("s-meaning").innerHTML = 'winter solstice';
     document.getElementById("s-motif").innerHTML = 'ripening yuzu';
+    document.getElementById("s-next").innerHTML = 'january 6';
 }
 
 if(mm==1 && (dd>=6 && dd<=19)){
@@ -285,6 +306,7 @@ if(mm==1 && (dd>=6 && dd<=19)){
     document.getElementById("s-korean").innerHTML = 'sohan';
     document.getElementById("s-meaning").innerHTML = 'minor cold';
     document.getElementById("s-motif").innerHTML = 'the face of a pheasant';
+    document.getElementById("s-next").innerHTML = 'january 21';
 }
 
 if(mm==1 && (dd>=21) || mm==2 && (dd<=3)){
@@ -294,4 +316,5 @@ if(mm==1 && (dd>=21) || mm==2 && (dd<=3)){
     document.getElementById("s-korean").innerHTML = 'daehan';
     document.getElementById("s-meaning").innerHTML = 'severe cold';
     document.getElementById("s-motif").innerHTML = 'ornamental cabbage';
+    document.getElementById("s-next").innerHTML = 'february 4';
 }
