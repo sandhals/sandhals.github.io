@@ -44,6 +44,13 @@ if(mm==2 && (dd>=4 && dd<=17)){
     document.getElementById("s-meaning").innerHTML = 'start of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
     document.getElementById("s-next").innerHTML = 'february 18';
+
+    document.getElementById("before").innerHTML = '大寒';
+    document.getElementById("before").style.background = 'var(--daikan)';
+    document.getElementById("now").innerHTML = '立春';
+    document.getElementById("now").style.background = 'var(--risshun)';
+    document.getElementById("next").innerHTML = '雨水';
+    document.getElementById("next").style.background = 'var(--usui)';
 }
 
 if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
@@ -54,17 +61,25 @@ if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
     document.getElementById("s-meaning").innerHTML = 'rain water';
     document.getElementById("s-motif").innerHTML = 'spring showers';
     document.getElementById("s-next").innerHTML = 'march 6';
+
+    document.getElementById("before").innerHTML = '立春';
+    document.getElementById("before").style.background = 'var(--shosho)';
+    document.getElementById("now").innerHTML = '雨水';
+    document.getElementById("now").style.background = 'var(--hakuro)';
+    document.getElementById("next").innerHTML = '啓蟄';
+    document.getElementById("next").style.background = 'var(--keichitsu)';
 }
 
 
 if(mm==3 && (dd>=6 && dd<=20)){
     document.documentElement.style.setProperty("--highlight", "var(--risshun");
     document.getElementById("season").innerHTML = '啓蟄';
-    document.getElementById("s-japanese").innerHTML = 'risshun';
+    document.getElementById("s-japanese").innerHTML = 'keichitsu';
     document.getElementById("s-korean").innerHTML = 'ipchun';
     document.getElementById("s-meaning").innerHTML = 'beginning of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
     document.getElementById("s-next").innerHTML = 'march 21';
+    /*finish names and before and after*/
 }
 
 if(mm==3 && (dd>=21) || mm==4 && (dd<=3)){
@@ -227,6 +242,13 @@ if(mm==9 && (dd>=8 && dd<=22)){
     document.getElementById("s-meaning").innerHTML = 'white dew';
     document.getElementById("s-motif").innerHTML = 'the harvest moon';
     document.getElementById("s-next").innerHTML = 'september 23';
+
+    document.getElementById("before").innerHTML = '処暑';
+    document.getElementById("before").style.background = 'var(--shosho)';
+    document.getElementById("now").innerHTML = '白露';
+    document.getElementById("now").style.background = 'var(--hakuro)';
+    document.getElementById("next").innerHTML = '秋分';
+    document.getElementById("next").style.background = 'var(--shuubun)';
 }
 
 if(mm==9 && (dd>=23) || mm==10 && (dd<=7)){
@@ -237,6 +259,13 @@ if(mm==9 && (dd>=23) || mm==10 && (dd<=7)){
     document.getElementById("s-meaning").innerHTML = 'autumn equinox';
     document.getElementById("s-motif").innerHTML = 'the leaves turn';
     document.getElementById("s-next").innerHTML = 'october 8';
+
+    document.getElementById("before").innerHTML = '白露';
+    document.getElementById("before").style.background = 'var(--hakuro)';
+    document.getElementById("now").innerHTML = '秋分';
+    document.getElementById("now").style.background = 'var(--shuubun)';
+    document.getElementById("next").innerHTML = '寒露';
+    document.getElementById("next").style.background = 'var(--kanro)';
 }
 
 if(mm==10 && (dd>=8 && dd<=22)){
@@ -247,6 +276,13 @@ if(mm==10 && (dd>=8 && dd<=22)){
     document.getElementById("s-meaning").innerHTML = 'cold dew';
     document.getElementById("s-motif").innerHTML = 'dew on leaves';
     document.getElementById("s-next").innerHTML = 'october 22';
+
+    document.getElementById("before").innerHTML = '秋分';
+    document.getElementById("before").style.background = 'var(--shuubun)';
+    document.getElementById("now").innerHTML = '寒露';
+    document.getElementById("now").style.background = 'var(--kanro)';
+    document.getElementById("next").innerHTML = '霜降';
+    document.getElementById("next").style.background = 'var(--soukou)';
 }
 
 if(mm==10 && (dd>=22) || mm==11 && (dd<=6)){
@@ -257,6 +293,13 @@ if(mm==10 && (dd>=22) || mm==11 && (dd<=6)){
     document.getElementById("s-meaning").innerHTML = 'frost descends';
     document.getElementById("s-motif").innerHTML = 'ripe persimmons';
     document.getElementById("s-next").innerHTML = 'november 11';
+
+    document.getElementById("before").innerHTML = '寒露';
+    document.getElementById("before").style.background = 'var(--kanro)';
+    document.getElementById("now").innerHTML = '霜降';
+    document.getElementById("now").style.background = 'var(--soukou)';
+    document.getElementById("next").innerHTML = '立冬';
+    document.getElementById("next").style.background = 'var(--rittou)';
 }
 
 if(mm==11 && (dd>=7 && dd<=21)){
@@ -267,6 +310,13 @@ if(mm==11 && (dd>=7 && dd<=21)){
     document.getElementById("s-meaning").innerHTML = 'start of winter';
     document.getElementById("s-motif").innerHTML = 'camelias bloom';
     document.getElementById("s-next").innerHTML = 'november 22';
+
+    document.getElementById("before").innerHTML = '霜降';
+    document.getElementById("before").style.background = 'var(--soukou)';
+    document.getElementById("now").innerHTML = '立冬';
+    document.getElementById("now").style.background = 'var(--rittou)';
+    document.getElementById("next").innerHTML = '小雪';
+    document.getElementById("next").style.background = 'var(--shousetsu)';
 }
 
 if(mm==11 && (dd>=22) || mm==12 && (dd<=6)){
@@ -277,6 +327,13 @@ if(mm==11 && (dd>=22) || mm==12 && (dd<=6)){
     document.getElementById("s-meaning").innerHTML = 'light snow';
     document.getElementById("s-motif").innerHTML = 'ripening oranges';
     document.getElementById("s-next").innerHTML = 'december 6';
+
+    document.getElementById("before").innerHTML = '立冬';
+    document.getElementById("before").style.background = 'var(--rittou)';
+    document.getElementById("now").innerHTML = '小雪';
+    document.getElementById("now").style.background = 'var(--shousetsu)';
+    document.getElementById("next").innerHTML = '大雪';
+    document.getElementById("next").style.background = 'var(--taisetsu)';
 }
 
 if(mm==12 && (dd>=6 && dd<=21)){
@@ -287,6 +344,13 @@ if(mm==12 && (dd>=6 && dd<=21)){
     document.getElementById("s-meaning").innerHTML = 'heavy snow';
     document.getElementById("s-motif").innerHTML = 'snow falls';
     document.getElementById("s-next").innerHTML = 'december 22';
+
+    document.getElementById("before").innerHTML = '小雪';
+    document.getElementById("before").style.background = 'var(--shousetsu)';
+    document.getElementById("now").innerHTML = '大雪';
+    document.getElementById("now").style.background = 'var(--taisetsu)';
+    document.getElementById("next").innerHTML = '冬至';
+    document.getElementById("next").style.background = 'var(--touji)';
 }
 
 if(mm==12 && (dd>=22) || mm==1 && (dd<=5)){
@@ -297,6 +361,13 @@ if(mm==12 && (dd>=22) || mm==1 && (dd<=5)){
     document.getElementById("s-meaning").innerHTML = 'winter solstice';
     document.getElementById("s-motif").innerHTML = 'ripening yuzu';
     document.getElementById("s-next").innerHTML = 'january 6';
+
+    document.getElementById("before").innerHTML = '大雪';
+    document.getElementById("before").style.background = 'var(--taisetsu)';
+    document.getElementById("now").innerHTML = '冬至';
+    document.getElementById("now").style.background = 'var(--touji)';
+    document.getElementById("next").innerHTML = '小寒';
+    document.getElementById("next").style.background = 'var(--shoukan)';
 }
 
 if(mm==1 && (dd>=6 && dd<=19)){
@@ -307,6 +378,13 @@ if(mm==1 && (dd>=6 && dd<=19)){
     document.getElementById("s-meaning").innerHTML = 'minor cold';
     document.getElementById("s-motif").innerHTML = 'the face of a pheasant';
     document.getElementById("s-next").innerHTML = 'january 21';
+
+    document.getElementById("before").innerHTML = '冬至';
+    document.getElementById("before").style.background = 'var(--touji)';
+    document.getElementById("now").innerHTML = '小寒';
+    document.getElementById("now").style.background = 'var(--shoukan)';
+    document.getElementById("next").innerHTML = '大寒';
+    document.getElementById("next").style.background = 'var(--daikan)';
 }
 
 if(mm==1 && (dd>=21) || mm==2 && (dd<=3)){
@@ -317,4 +395,11 @@ if(mm==1 && (dd>=21) || mm==2 && (dd<=3)){
     document.getElementById("s-meaning").innerHTML = 'severe cold';
     document.getElementById("s-motif").innerHTML = 'ornamental cabbage';
     document.getElementById("s-next").innerHTML = 'february 4';
+
+    document.getElementById("before").innerHTML = '小寒';
+    document.getElementById("before").style.background = 'var(--shoukan)';
+    document.getElementById("now").innerHTML = '大寒';
+    document.getElementById("now").style.background = 'var(--daikan)';
+    document.getElementById("next").innerHTML = '立春';
+    document.getElementById("next").style.background = 'var(--risshun)';
 }
