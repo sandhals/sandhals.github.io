@@ -1,3 +1,18 @@
+///LANGUAGES
+
+$(function() {
+    $('.languages a').on('click', function(){
+        var myLanguage = this.id;
+        $('a.hide').removeClass('hide');
+        $(this).addClass('hide');
+        $('.active').addClass('hide');
+        $('.active').removeClass('.active');
+        $('p.' + myLanguage + '').addClass('active');
+        $('p.' + myLanguage + '').removeClass('hide');
+    })
+})
+
+
 ////HOVER
 $("[data-link]").on('mouseover', function() {
     var id = $(this).attr('data-link');

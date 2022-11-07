@@ -1,0 +1,137 @@
+body{
+    min-width:400px
+}
+
+:root{
+    --margin:25vw;
+    --width: 33rem;
+    --red: rgb(203, 71, 71);
+    --imgwidth:calc(33rem + 5rem);
+    --showonmobile: none;
+}
+
+@media(max-width: 1000px){
+    :root{
+        --margin:10vw;
+        --width:75vw;
+        --imgwidth:75vw;
+        --showonmobile: inline-block;
+    }
+}
+
+
+
+::selection{
+    background:var(--red);
+    color:white;
+}
+
+a{  
+    text-decoration: none;
+    color: var(--red);
+}
+
+.wrapper{
+    position:relative;
+    font-family:Helvetica;
+    font-size:12pt;
+}
+
+#opennav{
+    color:var(--red);
+    font-size: 2em;
+    display:var(--showonmobile);
+    position:fixed;
+    top:10px;
+    right:30px;
+    z-index:100;
+}
+
+nav{
+    font-size:0.8rem;
+    position: fixed;
+    width: 10vw;
+    top:0;
+    left:calc(var(--imgwidth) + var(--margin) + 5vw);
+}
+
+#opennav.inactive:after{
+    content:'○';
+}#opennav.active:after{
+    content:'●';
+}
+
+@media(max-width: 1000px){
+    nav{
+        display:none;
+        left:calc(var(--imgwidth) + var(--margin) - 15vw);
+        padding-top:10px;
+        background:white;
+        height:100%;
+        padding-left:25px;
+        border-left:black solid 1px;
+        width:100%;
+    }
+}
+
+article{
+    display:block;
+}
+
+article h1{
+    margin-left:calc(var(--margin));
+    font-size:1.4rem;
+}
+
+article > p{
+    margin-left:var(--margin);
+    font-size:0.9rem;
+    width: var(--width);
+    line-height:1.65rem;
+    font-weight:lighter;
+}
+
+article img{
+    width:var(--imgwidth);
+    margin-left:var(--margin);
+    padding-bottom:10px;
+}
+
+button{
+    color: black;
+    background:none;
+    border:none;
+    padding:0;
+    font:inherit;
+}button:after{
+    content:'*';
+    color:var(--red);
+}button:hover{
+    color:var(--red);
+    transition:220ms;
+}
+
+.footnote{
+    position:absolute;
+    padding:10px;
+    box-sizing:border-box;
+    width:10rem;
+    border:red solid 1px;
+    left:calc(var(--margin) - 11rem);
+    margin-top:-1.1rem;
+
+}
+
+@media(max-width: 1000px){
+    .footnote{
+        position:static;
+        width:20rem;
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+}
+@media(max-width: 410px){
+    .footnote{
+        width:var(--width);
+    }
+}

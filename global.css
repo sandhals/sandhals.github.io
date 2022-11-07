@@ -26,7 +26,35 @@
     --touji:rgb(248, 219, 52); /*ripening yuzu*/
     --shoukan:rgb(44, 97, 241); /*the face of a pheasant*/
     --daikan:rgb(149, 115, 182); /*ornamental cabbage*/
+    --backgroundsize: 70px 70px;
+    --square: 70px;
+    --homefontsize: 23px;
+    --fontsize: 15pt;
+    --titlesize: 15px;
+    --margin:25px;
+    --tbmargin: 10px 25px;
+    --footerpadding: 5px 20px 24px 20px;
+    --headerpadding:19px 24px 20px 24px;
+    --twentypx:20px;
+    --onepx:1px;
   }
+
+  @media(max-width: 560px){
+    :root{
+    --backgroundsize: 12.5vw 12.5vw;
+    --square:12.5vw;
+    --titlesize:2.679vw;
+    --homefontsize: 4vw;
+    --fontsize: 3.571vw;
+    --margin:4.464vw;
+    --tbmargin:1.786vw 4.464vw;
+    --footerpadding: 0.893vw 3.571vw 4.286vw 3.571vw;
+    --headerpadding: 3.393vw 4.286vw 3.571vw 4.286vw;
+    --twentypx: 3.571vw;
+    --onepx:0.179vw;
+    }
+  }
+
 
 @font-face {
     font-family:'Garamond';
@@ -61,7 +89,7 @@
 
 
 body{
-    background-size:70px 70px;
+    background-size:var(--backgroundsize);
     background-image:linear-gradient(to right, var(--line) 1px, transparent 1px), linear-gradient(to bottom, var(--line) 1px, transparent 1px);
     margin:0px;
     max-height:100vh;
@@ -85,21 +113,6 @@ body{
     width: 100%;
     }
 
-
-.sun{
-    height:200px;
-    width:200px;
-    border-radius:50% 60% 40% 80%;
-    background:orange;
-    position:absolute;
-    right:100px;
-    bottom:200px;
-    mix-blend-mode:multiply;
-    filter:blur(px);
-    z-index:150;
-    opacity:.5;
-    image-rendering:pixelated;
-}
     
 
 canvas {
@@ -118,10 +131,10 @@ canvas {
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width: 419px;
-    height: 349px;
-    margin-top:calc(70px * 1);
-    margin-left:calc(70px * 1);
+    width: calc(var(--square) * 6 - 1px);
+    height: calc(var(--square) * 5 - 1px);
+    margin-top:calc(var(--square) * 1);
+    margin-left:calc(var(--square) * 1);
     overflow-y:auto;
     display:flex;
     flex-direction:column;
@@ -134,10 +147,10 @@ canvas {
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width: 419px;
-    height: 279px;
-    margin-top:calc(70px * 1);
-    margin-left:calc(70px * 1);
+    width: calc(var(--square) * 6 - 1px);
+    height: calc(var(--square) * 4 - 1px);
+    margin-top:calc(var(--square) * 1);
+    margin-left:calc(var(--square) * 1);
     overflow-y:auto;
     display:flex;
     flex-direction:column;
@@ -146,9 +159,9 @@ canvas {
 
 #japanese > p{
     position:absolute;
-    top:46.5px;
+    top:calc(var(--onepx) * 46.5);
     background:var(--background);
-    font-size:14pt!important;
+    font-size:calc(var(--onepx) * 14)!important;
     font-family:"Noto Serif JP";
     line-height:20pt;
 }#japanese{
@@ -171,11 +184,11 @@ canvas {
 
 #korean > p{
     position:absolute;
-    top:46.5px;
+    top:calc(var(--onepx) * 46.5);
     background:var(--background);
-    font-size:14pt!important;
+    font-size:calc(var(--onepx) * 14)!important;
     font-family:'Times New Roman';
-    line-height:20pt;
+    line-height:var(--twentypx);
 }#korean{
     display:none;
 }#korean:target{
@@ -195,15 +208,15 @@ canvas {
 }
 
 .enlink{
-    line-height:20px;
+    line-height:var(--twentypx);
     position:absolute;
-    top:21px;
-    right:25px;
+    top:calc(var(--twentypx) + 1px);
+    right:calc(var(--onepx) * 25);
     font-weight:500!important;
     z-index:100;
     font-family:Lato;
     background:var(--background);
-    font-size: 10.5pt;
+    font-size: calc(var(--onepx) * 10.5);
     vertical-align:top;}
 .enlink > a{text-decoration:none;
 }.enlink > a:hover{
@@ -216,16 +229,64 @@ canvas {
 }
 
 .header{
+    height:var(--twentypx);
     z-index:1;
-    padding-right:24px;
-    padding-left:24px;
-    padding-top:19px;
-    padding-bottom:20px;
+    padding:var(--headerpadding);
     display:flex;
     justify-content:space-between;
     position:sticky;
     background:var(--background);
     top:0; /* required for sticky */
+}
+
+.languages{
+    height:var(--twentypx);
+    padding:0;
+    margin:0;
+    font-family:Lato;
+    margin:0;
+    font-weight:300;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-size:var(--titlesize);}
+    .languages a{
+        text-decoration:none;
+    }.languages a:hover{
+    color:var(--highlight);
+}
+
+.body{
+    padding:var(--tbmargin);
+    margin:0;
+    font-size:var(--homefontsize)!important;
+}
+
+#en{font-size:calc(var(--onepx) * 13.2)}
+#jp{font-size:calc(var(--onepx) * 10.5)}
+#kr{font-size:calc(var(--onepx) * 10.5)}
+
+
+.jp{
+    top:calc(var(--onepx) * 46.5);
+    background:var(--background);
+    font-size:calc(var(--onepx) * 18.7)!important;
+    font-family:"Noto Serif JP";
+    line-height:calc(var(--onepx) * 26.7)!important;
+}
+
+.kr{
+    top:calc(var(--onepx) * 46.5);
+    background:var(--background);
+    font-size:calc(var(--onepx) * 18.5)!important;
+    font-family:'Times New Roman';
+    line-height:calc(var(--onepx) * 26.7)!important;
+    text-align:justify;
+}
+
+.hide{
+    display:hidden;
+}.active{
+    display:block;
 }
 
 .twitter-timeline{
@@ -238,13 +299,13 @@ canvas {
 
 h1{
     font-family:Lato;
-    font-size:15px;
+    font-size:var(--titlesize);
     font-weight:400;
 }
 
 .title, .option{
     font-family:Lato;
-    font-size:15px;}
+    font-size:var(--titlesize);}
     .title:hover{
     color:var(--highlight);}
     .option:hover{
@@ -260,7 +321,7 @@ h1{
     font-weight:700;
     letter-spacing:1px;
     text-decoration:none;
-    font-size:15px;}
+    font-size:var(--titlesize);}
     .title:hover{
     color:var(--highlight);
 }
@@ -281,7 +342,7 @@ button {
     cursor: pointer;
     margin:0px;
     font-weight:400;
-    font-size:15px;}
+    font-size:calc(var(--onepx) * 15);}
     button:hover{
     color:var(--highlight);}
     button:focus{
@@ -289,12 +350,12 @@ button {
 }
 
 p{
-    font-size:15pt;
+    font-size:var(--fontsize);
     margin-top:0px;
     margin-bottom:7px;
     padding-bottom:0px;
-    padding-left:25px;
-    padding-right:25px;
+    padding-left:var(--margin);
+    padding-right:var(--margin);
     text-align:justify;
     text-indent:20px;
     font-family:Garamond;
@@ -302,12 +363,7 @@ p{
     
 }
 
-.body{
-    padding-top:10px;
-    padding-bottom:10px;
-    margin:0;
-    font-size:23px !important;
-}
+
 
 .twitterwidget{
 z-index:100;height:100%;width:100%;background-color:var(--background);position:absolute;mix-blend-mode:multiply;
@@ -320,7 +376,7 @@ z-index:100;height:100%;width:100%;background-color:var(--background);position:a
 
 .koreanbody{
     font-size:14pt;
-    margin-top:10px;
+    margin-top:var(--tbmargin);
     margin-bottom:7px;
     padding-bottom:0px;
     padding-left:25px;
@@ -345,9 +401,10 @@ ul.body{
     font-size:23px;
 }
 
-.jp{
-    font-size: 80%;
-    font-family:"Noto Serif JP";
+#jp{
+    font-size:calc((var(--titlesize) * 0.87))
+}#kr{
+    font-size:calc((var(--titlesize) * 0.9))
 }
 
 #langtoggle{
@@ -362,10 +419,7 @@ ul.body{
 .footer{
     margin:0;
     bottom:0;
-    padding-top:5px;
-    padding-bottom:24px;
-    padding-left:20px;
-    padding-right:20px;
+    padding: var(--footerpadding);
    
 }
 
@@ -383,7 +437,7 @@ ul.body{
     padding:0;
     margin:0 0 0 5px;
     font-family:Lato;
-    font-size:15px;
+    font-size:var(--titlesize);
     list-style-type:none;
     display:flex;
     justify-content:space-between;
@@ -421,7 +475,7 @@ ul.sites > li{
     color:rgba(0, 0, 0, 0.849);
     font-family: monospace;
     font-size: 10pt;
-    margin-bottom:10px;
+    margin-bottom:var(--tbmargin);
 }
 
 .wips{
@@ -436,7 +490,7 @@ li > a:hover{
     color:rgba(0, 0, 0, 0.575);
     font-size:8pt;
     margin:5px;
-    padding:9px 15px;
+    padding:9px var(--titlesize);
     width:80%;
     text-align:justify;
     background:rgba(71, 71, 71, 0.089);
@@ -524,7 +578,7 @@ summary>a{
     height: 0.5em;
     width: 0.5em;
     margin-right: 0.1em;
-    background-size: 10px 10px;
+    background-size: var(--tbmargin) var(--tbmargin);
     vertical-align: 5px;
     opacity: 0.8;
     display: inline;    
@@ -540,7 +594,7 @@ summary>a{
     height: 0.5em;
     width: 1em;
     margin-right: 0.1em;
-    background-size: 10px 10px;
+    background-size: var(--tbmargin) var(--tbmargin);
     vertical-align: 5px;
     opacity: 0.8;
     display: inline;    
@@ -556,12 +610,12 @@ img{
 
 
 .popup{
-    margin-top:calc(70px * 1);
-    margin-left:calc(70px * 8);
+    margin-top:calc(var(--square) * 1);
+    margin-left:calc(var(--square) * 8);
 }@media (max-width:800px){
     .popup{
-        margin-top: calc(70px * 7);
-        margin-left:calc(70px * 3)
+        margin-top: calc(var(--square) * 7);
+        margin-left:calc(var(--square) * 1)
     }
     html, body{
         width:800px!important;
@@ -578,10 +632,10 @@ img{
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(70px * 3 - 1px);
-    height:calc(70px * 1 - 1px);
-    margin-top:calc(70px * 1);
-    margin-left:calc(70px * 8);
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 1 - 1px);
+    margin-top:calc(var(--square) * 1);
+    margin-left:calc(var(--square) * 8);
 }
 
 .b33{
@@ -593,8 +647,8 @@ img{
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(70px * 3 - 1px);
-    height:calc(70px * 3 - 1px);
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 3 - 1px);
   }
 
 .b35{
@@ -606,8 +660,8 @@ img{
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(70px * 3 - 1px);
-    height:calc(70px * 5 - 1px);
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 5 - 1px);
   }
 
   .b34{
@@ -619,8 +673,8 @@ img{
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(70px * 3 - 1px);
-    height:calc(70px * 4 - 1px);
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 4 - 1px);
     overflow:hidden;
    } 
 
@@ -634,8 +688,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 4 - 1px);
-   height:calc(70px * 4 - 1px);
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
 .b43{
@@ -647,8 +701,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 4 - 1px);
-   height:calc(70px * 3 - 1px);
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 3 - 1px);
    overflow:hidden;
   }  
 
@@ -661,8 +715,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 4 - 1px);
-   height:calc(70px * 2 - 1px);
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 2 - 1px);
    overflow:hidden;
   }   
 
@@ -675,8 +729,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 4 - 1px);
-   height:calc(70px * 6 - 1px);
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 6 - 1px);
   }  
 
 .b53{
@@ -701,8 +755,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 5 - 1px);
-   height:calc(70px * 4 - 1px);
+   width:calc(var(--square) * 5 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
    
@@ -715,8 +769,8 @@ img{
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(70px * 6 - 1px);
-   height:calc(70px * 4 - 1px);
+   width:calc(var(--square) * 6 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
   .seasonblock{
@@ -836,18 +890,18 @@ iframe{
 
 
   .ways{
-    width:70px;
-    height:70px; 
-    top:calc(70px * 6);
-    left:calc(70px * 3); 
+    width:var(--square);
+    height:var(--square); 
+    top:calc(var(--square) * 6);
+    left:calc(var(--square) * 3); 
     z-index:106;
     display:block;
     position:absolute;
     background-image:url(https://64.media.tumblr.com/9b22aa4b824f13e0651148ca587c9111/tumblr_oewgr5oLxi1rsuztqo1_400.gifv);
     background-size:100px 100px;
     background-position:center;
-    width:70px;
-    height:70px;  
+    width:var(--square);
+    height:var(--square);  
   }
   .lilwindow{
     position:relative;
@@ -857,15 +911,15 @@ iframe{
     top:0;
     background:var(--background);
     border:var(--line) solid 1px;
-    width:69px;
-    height:69px;
+    width:calc(var(--square) - 1px);
+    height:calc(var(--square) - 1px);
     transition: width 3s ease-in-out;
   }.ways:hover .lilwindow{
       animation: slide 2s 1s forwards;
       animation-timing-function: 2s ease-in;
   }@keyframes slide{
       0%{
-      width:69px;
+      width:calc(var(--square) - 1px);
       }
       100%{
        width:0px;   

@@ -1,0 +1,16 @@
+[
+{
+    "dolor": { 
+           "name": "Satish",
+           "age":   25,
+           "company": "Techntoip"
+          },
+  
+  
+    "goodbye": {
+            "name": "Kiran",
+           "age":   28,
+           "company": "Oracle"   
+          }   
+ }
+]
