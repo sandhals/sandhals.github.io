@@ -93,7 +93,6 @@ body{
     background-image:linear-gradient(to right, var(--line) 1px, transparent 1px), linear-gradient(to bottom, var(--line) 1px, transparent 1px);
     margin:0px;
     max-height:100vh;
-    min-width:1500px;
     background-color:var(--background);
     overflow:hidden;}body.widget{
     background-image:none;}.widget{
@@ -155,72 +154,6 @@ canvas {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-}
-
-#japanese > p{
-    position:absolute;
-    top:calc(var(--onepx) * 46.5);
-    background:var(--background);
-    font-size:calc(var(--onepx) * 14)!important;
-    font-family:"Noto Serif JP";
-    line-height:20pt;
-}#japanese{
-    display:none;
-}#japanese:target{
-    display:block;
-}#japanese > .footer{
-    position:absolute;
-    left:0px;
-    background:var(--background);
-    width:90.4%;
-    z-index:100;
-}#jplink{
-    position:absolute;
-}#jplink:target{
-    display:none;
-}#japanese:target{
-    display:block;
-}
-
-#korean > p{
-    position:absolute;
-    top:calc(var(--onepx) * 46.5);
-    background:var(--background);
-    font-size:calc(var(--onepx) * 14)!important;
-    font-family:'Times New Roman';
-    line-height:var(--twentypx);
-}#korean{
-    display:none;
-}#korean:target{
-    display:block;
-}#korean > .footer{
-    position:absolute;
-    left:0px;
-    background:var(--background);
-    width:90.4%;
-    z-index:100;
-}#krlink{
-    position:absolute;
-}#krlink:target{
-    display:none;
-}#korean:target{
-    display:block;
-}
-
-.enlink{
-    line-height:var(--twentypx);
-    position:absolute;
-    top:calc(var(--twentypx) + 1px);
-    right:calc(var(--onepx) * 25);
-    font-weight:500!important;
-    z-index:100;
-    font-family:Lato;
-    background:var(--background);
-    font-size: calc(var(--onepx) * 10.5);
-    vertical-align:top;}
-.enlink > a{text-decoration:none;
-}.enlink > a:hover{
-    color:var(--highlight);
 }
 
 ::-webkit-scrollbar{
