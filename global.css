@@ -144,7 +144,7 @@ canvas {
 
 .home {
     position:relative;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
@@ -563,7 +563,7 @@ img{
    display:block;
     position:absolute;
     top:0;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
@@ -578,12 +578,12 @@ img{
    display:block;
     position:absolute;
     top:0;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(var(--square) * 3 - var(--onepx));
-    height:calc(var(--square) * 3 - var(--onepx));
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 3 - 1px);
   }
 
 .b35{
@@ -591,12 +591,12 @@ img{
    display:block;
     position:absolute;
     top:0;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(var(--square) * 3 - var(--onepx));
-    height:calc(var(--square) * 5 - var(--onepx));
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 5 - 1px);
   }
 
   .b34{
@@ -604,12 +604,12 @@ img{
     display:block;
     position:absolute;
     top:0;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width:calc(var(--square) * 3 - var(--onepx));
-    height:calc(var(--square) * 4 - var(--onepx));
+    width:calc(var(--square) * 3 - 1px);
+    height:calc(var(--square) * 4 - 1px);
     overflow:hidden;
    } 
 
@@ -619,12 +619,12 @@ img{
     display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 4 - var(--onepx));
-   height:calc(var(--square) * 4 - var(--onepx));
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
 .b43{
@@ -632,12 +632,12 @@ img{
    display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 4 - var(--onepx));
-   height:calc(var(--square) * 3 - var(--onepx));
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 3 - 1px);
    overflow:hidden;
   }  
 
@@ -646,12 +646,12 @@ img{
     display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 4 - var(--onepx));
-   height:calc(var(--square) * 2 - var(--onepx));
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 2 - 1px);
    overflow:hidden;
   }   
 
@@ -660,12 +660,12 @@ img{
     display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 4 - var(--onepx));
-   height:calc(var(--square) * 6 - var(--onepx));
+   width:calc(var(--square) * 4 - 1px);
+   height:calc(var(--square) * 6 - 1px);
   }  
 
 .b53{
@@ -673,7 +673,7 @@ img{
     display:block;
     position:absolute;
     top:0;
-    border: var(--onepx);
+    border: 1px;
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
@@ -686,12 +686,12 @@ img{
    display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 5 - var(--onepx));
-   height:calc(var(--square) * 4 - var(--onepx));
+   width:calc(var(--square) * 5 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
    
@@ -700,12 +700,12 @@ img{
    display:block;
    position:absolute;
    top:0;
-   border: var(--onepx);
+   border: 1px;
    border-style:solid;
    border-color:var(--line);
    background:var(--background);
-   width:calc(var(--square) * 6 - var(--onepx));
-   height:calc(var(--square) * 4 - var(--onepx));
+   width:calc(var(--square) * 6 - 1px);
+   height:calc(var(--square) * 4 - 1px);
   }  
 
   .seasonblock{
