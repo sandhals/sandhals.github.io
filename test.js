@@ -3,7 +3,7 @@ console.log('Hello');
 $(function () {
     $('#opennav').on('click', function (){
         $(this).toggleClass('active');
-        $('nav').html('h')
+        $('nav').toggle();
     })
 })
 

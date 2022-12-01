@@ -44,8 +44,8 @@ a{
     font-size: 2em;
     display:var(--showonmobile);
     position:fixed;
-    top:10px;
-    right:30px;
+    top:9px;
+    right:15px;
     z-index:100;
 }
 
@@ -57,16 +57,11 @@ nav{
     left:calc(var(--imgwidth) + var(--margin) + 5vw);
 }
 
-#opennav.inactive:after{
-    content:'○';
-}#opennav.active:after{
-    content:'●';
-}
 
 @media(max-width: 1000px){
     nav{
         display:none;
-        left:calc(var(--imgwidth) + var(--margin) - 15vw);
+        left:calc(var(--imgwidth) + var(--margin) - 35vw);
         padding-top:10px;
         background:white;
         height:100%;
@@ -75,6 +70,13 @@ nav{
         width:100%;
     }
 }
+
+#opennav.inactive:after{
+    content:'○';
+}#opennav.active:after{
+    content:'●';
+}
+
 
 article{
     display:block;
