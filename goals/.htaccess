@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile /Users/brixtonsandhals/Documents/GitHub/site/goals/.htpasswd
+require valid-user
