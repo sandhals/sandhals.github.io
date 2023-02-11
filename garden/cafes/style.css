@@ -56,7 +56,7 @@ ul{
     gap: 0; 
     margin:0;
     padding:0;
-    width:calc(22px*14);
+    width:calc(1.4em*14);
     opacity:1;
     filter:grayscale(1);
     
@@ -65,7 +65,7 @@ ul{
   .gridblock{
     font-family:'Courier Prime';
     font-size:14.9pt;
-    letter-spacing:0.2em;
+    letter-spacing:0.25rem;
     line-height:21px;
     height:19px;
     width:17px;

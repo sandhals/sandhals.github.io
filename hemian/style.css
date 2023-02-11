@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Courier+Prime&family=DotGothic16&display=swap');
+
+:root{
+    --width: 400px;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Bodoni Moda';
+}
+
+body{
+    height:100%;
+    background:black;
+}
+
+.container{
+    width:100vw;
+    height:100%;
+    display:flex;
+}
+
+.sidebar{
+    position:fixed;
+    width:var(--width);
+    height:100%;
+    text-align: center;
+    z-index:10;
+    background:white;
+    transition:250ms;
+    filter:invert(1);
+    padding: 5vh;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+.sidebar:hover{
+    filter:invert(0);
+}
+
+.sidebar > ul{
+    list-style:none;
+    font-size: 2.5vh;
+    font-weight: 400;
+    margin: 0 0px 0 2vh;
+    letter-spacing: 0px;
+    margin-top: 4vh;
+}
+
+ul > li{
+    padding-bottom:2vh;
+
+}
+
+li > a{
+    text-decoration: none;
+    color:black;
+    opacity:1;
+    display:inline-block;
+}
+
+li > a:hover{
+    -moz-transform:    scaleX(-1); /* Gecko */
+    -o-transform:      scaleX(-1); /* Opera */
+    -webkit-transform: scaleX(-1); /* Webkit */
+    transform:         scaleX(-1); /* Standard */
+}
+
+.banner{
+    height:12vh;
+    margin:auto;
+    padding:0 2vh 0 2.1vh;
+    box-sizing:border-box;
+
+}
+
+.main{
+    width:100%;
+    height:100%;
+    background:black;
+    transition: 250ms;
+    margin-left:var(--width);
+    text-align:center;
+    padding-bottom:2vh;
+}
+
+.main:hover{
+    background:white;
+
+}
+
+.stock{
+    opacity:20%;
+    height:100vh;
+    width:100%;
+    object-fit:cover;
+    padding:13vh;
+    box-sizing: border-box;
+    transition:opacity 1s;
+}
+
+.stock:hover{
+    opacity:1;
+}
+
+footer{
+    font-size:10px;
+    margin:auto;
+    padding-bottom:20px;
+    padding-top:20px;
+    opacity:50%;
+    transition:1s;
+}
+
+footer:hover{
+    opacity:1;
+}
+
+.mainbanner{
+    margin:auto;
+    position:fixed;
+    top:-50vh;
+    z-index:100;
+    height:12vh;
+    width:100%;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+.mainbanner > img{
+    height:11vh;
+}
+
+
+@media (max-width:1200px){
+    .stock{
+        padding:13vw 0;
+        transition:500ms;
+    }
+}
+
+@media (max-width:1000px){
+    .stock{
+        padding:20vw 0;
+        transition:500ms;
+    }
+
+    footer{
+        font-size:8px;
+        padding-bottom:2px;
+    }
+}
+
+@media (max-width:800px){
+    :root{
+        --width:0;
+    }
+    
+    .sidebar{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:auto;
+        padding:0;
+        padding-bottom:3vh;
+        background:none;
+        color:white;
+        filter:invert(1);
+    }
+
+    .sidebar:hover{
+        color:white;
+        filter:invert(1);
+    }
+
+    .banner{
+        display:none;
+    }
+
+    ul li{
+        display:inline;
+        width:100%;
+        padding:0 2vh;
+        margin:0;
+        font-size:2vh;
+    }
+
+    .main{
+        background:black;
+        padding:0;
+    }
+
+    .main:hover{
+        background:black;
+    }
+
+    .mainbanner{
+        top:2vh;
+        filter:invert(1);
+    }
+
+    .stock{
+        padding:16vh 0;
+    }
+
+    img{
+        opacity:1!important;
+    }
+
+    footer{
+       display:none;
+    }
+    }
+
+    iframe{
+        width:100%;
+        height:100vh;
+    }
