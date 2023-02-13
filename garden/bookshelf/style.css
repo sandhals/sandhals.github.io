@@ -74,8 +74,8 @@ details[open] > summary:after {
 .header{
     height:40vh;
     width:25.5vh;
-    font-size:1.77vh;
-    padding:5vh;
+    font-size:1.6vh;
+    padding:2vh 5vh 5vh 5vh;
     text-align:justify;
 }
 
