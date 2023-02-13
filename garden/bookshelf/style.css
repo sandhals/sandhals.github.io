@@ -18,6 +18,11 @@ body{
     color:grey;
 }
 
+#back:not(:hover){
+    color:rgba(128, 128, 128, 0.459);
+
+}
+
 .container{
     display:flex;
     flex-wrap:wrap;
