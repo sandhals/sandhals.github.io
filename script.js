@@ -78,9 +78,9 @@ if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
     document.getElementById("s-next").innerHTML = 'march 6';
 
     document.getElementById("before").innerHTML = '立春';
-    document.getElementById("before").style.background = 'var(--shosho)';
+    document.getElementById("before").style.background = 'var(--risshun)';
     document.getElementById("now").innerHTML = '雨水';
-    document.getElementById("now").style.background = 'var(--hakuro)';
+    document.getElementById("now").style.background = 'var(--usui)';
     document.getElementById("next").innerHTML = '啓蟄';
     document.getElementById("next").style.background = 'var(--keichitsu)';
 }

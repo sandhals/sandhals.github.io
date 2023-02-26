@@ -394,7 +394,7 @@ ul.body{
 }
 
 a{
-    color:black;
+    color:inherit;
     position:relative;
     text-decoration:underline;
     text-decoration-style:solid;
