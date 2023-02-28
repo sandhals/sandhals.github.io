@@ -13,7 +13,7 @@
     background-image:
       linear-gradient(to right, grey 1px, transparent 1px),
       linear-gradient(to bottom, grey 1px, transparent 1px);
-    transition:1s;
+    transition:700ms;
   }
   
   main{
@@ -21,7 +21,7 @@
     display: grid;
     grid-template-rows: repeat(10, var(--grid));
     grid-template-columns: repeat(12, var(--grid));
-    transition:1s;
+    transition:700ms;
   }
 
   main > section{
@@ -51,19 +51,15 @@
 }
 
 @media (max-width: 560px){
-    :root{
-        --grid:12.5vw;
-    }
+
     body{
         background-position-x:calc(-1 * var(--grid));
     }
     main{
         margin-left:calc(-1 * var(--grid));
-        transition:1s;
     }
     .content{
         grid-column: 2 / span 8;
-        transition:1s;
       }
     .box{
         grid-column-start: 2;
