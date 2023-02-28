@@ -16,13 +16,34 @@
   color: black;
 }
 
+:root {
+  --grid: 70px;
+  --highlight: salmon;
+}
+
+::selection{
+  background:var(--highlight)
+}
+
+a{
+  color:black;
+  text-decoration-color:var(--highlight);
+}
+
+a:hover{
+  background:var(--highlight);
+
+}
+
 header a,
 nav a {
   text-decoration: none;
 }
 
-:root {
-  --grid: 70px;
+header a:hover,
+nav a:hover{
+  color: var(--highlight);
+  background:none;
 }
 
 body {
