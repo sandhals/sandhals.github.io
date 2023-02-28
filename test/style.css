@@ -45,6 +45,7 @@ main>section {
   height: calc(100% + 1px);
   background: white;
   border: solid grey 1px;
+  padding:3px 0 9px 0;
 }
 
 .content {
@@ -72,7 +73,7 @@ header {
   align-items: center;
   font-weight: 700;
   letter-spacing: 1px;
-  height: 12%;
+  height: 13%;
 }
 
 article {
@@ -81,7 +82,7 @@ article {
   text-align: justify;
   font-size: 23px;
   padding: 0 25px;
-  height:55%;
+  height:62%;
   display:flex;
   align-items:center;
 }
@@ -91,7 +92,7 @@ nav {
   font-size: 15px;
   padding: 10px;
   background: white;
-  height: 22%;
+  height: 18%;
 }
 
 ul {
@@ -141,6 +142,10 @@ ul {
     grid-row-end: 6;
   }
 
+main>section{
+  padding:1.5vw 0 3vw 0;
+}
+
   .content {
     grid-column: 2 / 10;
     overflow: hidden;
@@ -148,15 +153,16 @@ ul {
 
   header,
   nav {
-    font-size: 2.8vw;
-    padding: 6vw;
+    font-size: 2.6vw;
+    padding: 5vw 9vw;
   }
 
   article {
-    font-size: 4.6vw;
-    padding: 0 5vw;
+    text-indent:5vw;
+    font-size: 4.9vw;
+    padding: 0 9vw;
+    line-height:1em;
   }
-
 
   .box {
     grid-column-start: 2;
