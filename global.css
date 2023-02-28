@@ -178,6 +178,7 @@ canvas {
     top:0; /* required for sticky */
 }
 
+
 .languages{
     height:var(--twentypx);
     padding:0;
