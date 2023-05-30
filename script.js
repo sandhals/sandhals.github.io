@@ -87,24 +87,37 @@ if(mm==2 && (dd>=18) || mm==3 && (dd<=5)){
 
 
 if(mm==3 && (dd>=6 && dd<=20)){
-    document.documentElement.style.setProperty("--highlight", "var(--risshun");
+    document.documentElement.style.setProperty("--highlight", "var(--keichitsu");
     document.getElementById("season").innerHTML = '啓蟄';
     document.getElementById("s-japanese").innerHTML = 'keichitsu';
     document.getElementById("s-korean").innerHTML = 'ipchun';
     document.getElementById("s-meaning").innerHTML = 'beginning of spring';
     document.getElementById("s-motif").innerHTML = 'plum blossoms';
     document.getElementById("s-next").innerHTML = 'march 21';
-    /*finish names and before and after*/
+
+    document.getElementById("before").innerHTML = '啓蟄';
+    document.getElementById("before").style.background = 'var(--usui)';
+    document.getElementById("now").innerHTML = '啓蟄';
+    document.getElementById("now").style.background = 'var(--keichitsu)';
+    document.getElementById("next").innerHTML = '春分';
+    document.getElementById("next").style.background = 'var(--shunbun)';
 }
 
 if(mm==3 && (dd>=21) || mm==4 && (dd<=3)){
-    document.documentElement.style.setProperty("--highlight", "var(--usui");
+    document.documentElement.style.setProperty("--highlight", "var(--shunbun");
     document.getElementById("season").innerHTML = '春分';
-    document.getElementById("s-japanese").innerHTML = 'usui';
-    document.getElementById("s-korean").innerHTML = 'usu';
-    document.getElementById("s-meaning").innerHTML = 'rain water';
+    document.getElementById("s-japanese").innerHTML = 'shunbun';
+    document.getElementById("s-korean").innerHTML = 'chunbun';
+    document.getElementById("s-meaning").innerHTML = 'spring division';
     document.getElementById("s-motif").innerHTML = 'spring showers';
     document.getElementById("s-next").innerHTML = 'april 4';
+
+    document.getElementById("before").innerHTML = '啓蟄';
+    document.getElementById("before").style.background = 'var(--keichitsu)';
+    document.getElementById("now").innerHTML = '春分';
+    document.getElementById("now").style.background = 'var(--shunbun)';
+    document.getElementById("next").innerHTML = '晴明';
+    document.getElementById("next").style.background = 'var(--seimei)';
 }
 
 if(mm==4 && (dd>=4 && dd<=20)){
